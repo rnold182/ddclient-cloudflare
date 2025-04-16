@@ -1,7 +1,7 @@
 import requests
 import time
 
-# 🔧 KONFIG
+# 🔧 CONFIG
 API_TOKEN = 'your_cloudflare_api_token'
 ZONE_NAME = 'yourzone.com'
 RECORD_NAMES = ['yourdomain1.com', 'yourdomain2.com', 'sub.yourdomain.uk']
@@ -59,7 +59,7 @@ def main():
                     print(f'❌ {name} update unsuccessful:', result)
             last_ip = current_ip
         else:
-            print(f'⏳ No IP change detected ({current_ip}), sleeping for 5 minutes...')
+            print(f'⏳ IP is the same ({current_ip}), sleeping for 5 minutes...')
         time.sleep(SLEEP_TIME)
 
 if __name__ == '__main__':
