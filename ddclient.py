@@ -5,7 +5,7 @@ import time
 API_TOKEN = 'your_cloudflare_api_token'
 ZONE_NAME = 'yourzone.com'
 RECORD_NAMES = ['yourdomain1.com', 'yourdomain2.com', 'sub.yourdomain.uk']
-SLEEP_TIME = 300  # 5 perc
+SLEEP_TIME = 300  # 5 minutes
 
 # API HEADERS
 headers = {
